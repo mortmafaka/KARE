@@ -1,0 +1,305 @@
+@import "normalize.css";
+body {
+    font: 14px;
+    .wrapper {
+        width: 940px;
+        margin: 0 auto;
+        &-low {
+            width: 910px;
+            margin: 0 auto;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #010101;
+    }
+    li {
+        list-style: none;
+    }
+}
+.btn{
+    border:2px solid #853972;
+    padding:17px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #853972;
+    &:hover{
+        color: white;
+        background-color:#853972; 
+    }
+}
+header {
+    background: url('../img/Bd-header.gif') no-repeat 0 0;
+    height: 88px;
+    img {
+        float: left;
+        margin-top: 30px;
+    }
+    nav {
+        float: right;
+        ul {
+            float: right;
+            padding-top: 0;
+            margin-top: -57px
+        }
+        li {
+            float: right;
+            margin-left: 10px;
+            text-transform: uppercase;
+            padding-top: 15px;
+            a {
+                padding-bottom: 36px;
+                &:hover {
+                    border-bottom: 5px solid #f1283f
+                }
+            }
+        }
+    }
+}
+
+main {
+    .heading {
+        float: left;
+        padding-top: 15px;
+        min-height: 100px;
+        span{
+        font-size: 18px;
+        color: #fb374f;
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+        i{  
+        position: absolute;
+        margin-top: 35px;
+        background-image: url('../img/spritesheet.png');
+        width: 26px;
+        height: 28px;
+        background-position: -97px -5px;
+        
+        }
+        }
+    
+    
+    min-height: 1000px;
+    .arts {
+        min-height: 835px;
+        background: url('/img/Bg-wall.gif') no-repeat 50% 50%;
+        background-size: cover;
+        .art {
+            position: relative;
+            float: left;
+            top: 165px;
+            img {
+                position: relative;
+                left: 20px;
+                &:hover {
+                    bottom: 35px;
+                }
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+                a {
+                    text-decoration: underline;
+                    color: #7d3870;
+                    font-weight: bold;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+    .seminars {
+        min-height: 1000px;
+        margin-top: 145px;
+        
+        .images {
+            figure{
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            img{
+                margin-left:9px;
+            }
+        }
+        }
+    }
+    .registration{
+        min-height: 100px;
+        
+        form{
+            margin-bottom: -100px;
+            float: right;
+            width: 670px;
+            min-height:190px;
+            box-sizing: border-box;
+            font-weight: 18px;
+            p{
+                font-weight: bold;
+                font-size: 16px;
+            }
+            label{    
+                    
+                    width: 34px;
+                    height: 34px;
+                    float: left;
+                    margin-bottom: 10px;
+                background-image: url('../img/spritesheet.png');
+                &:nth-of-type(1){
+                    background-position: -221px -5px;
+                }                                   
+                &:nth-of-type(2){
+                    background-position: -177px -5px;
+                }
+                &:nth-of-type(3){
+                    background-position: -133px -5px;
+                }
+                
+            }
+            input{margin-top: -50px; 
+                float: right;
+                padding: 10px 0 7px;
+                width: 92%;
+                padding: 10px 0;
+                border-style:none;
+                border-bottom-style: groove;
+                border-color: #f44c5e;
+                margin-left: 50px;
+                font-weight: bold;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }    
+            }
+            button{
+                float: left;
+                margin-top: 36px;
+                font-size: 18px;
+                padding: 13px 34px 15px;
+                background-color: #fb374f;
+                border: none;
+                color: white;
+          }
+        }
+    }
+    .concurs{
+        margin-top: 100px;
+        background:url('../img/konkurs.png') no-repeat 50% 100%;
+        min-height: 500px;
+        background-color: #853972;
+        color:white;
+        &::after{
+            content:'';
+            clear:both;
+            display: table;
+    
+        }
+        
+        .con{
+            span,p,a{
+                color:white;
+                font-weight: bold;
+            }
+            padding-top: 265px;
+            .cons{float: left;
+                width:180px;
+                margin-left: 145px;
+            }
+            a{
+                text-decoration: underline;
+                text-align: justify;
+            }
+        }
+        
+        
+        
+        
+        
+        
+    }
+    
+    .tour{
+         &::after{
+            content:'';
+            clear:both;
+            display: table;
+    
+        }
+        margin-bottom: 65px;
+    .tours{
+        margin-top: 5px;
+        .text{
+            float:left;
+            margin-left: 170px;
+            p{
+                color:#939598;
+                font-weight: bold;
+            }
+        }
+        .btn{
+            float: right;
+        }
+    }
+    }
+    
+    .report{
+        min-height: 663px;
+        background: url('../img/bg-fashionKare.gif') no-repeat 50% 0;
+        .textWrapper{
+            margin-left: 45%;
+            padding-top:10%; 
+            p{
+            font-size: 47px;
+            line-height: 56px;
+            color: #853972;
+            
+        }
+            strong{
+                font-size: 60px;
+                color: #fb374f;
+            }
+            }
+        .reports{
+            &::after{
+                content: '';
+                display: table;
+                clear: both;
+            }
+            margin-top: 150px;
+            .uncover{
+                b{
+                    float: left;
+                    margin-bottom: 43px;
+                    color:#853972;
+                   font-weight: bold;
+                }
+                float:left;
+                margin-right: 100px;
+                &:last-child{
+                    margin-right: 0;
+                    }
+                &::after{
+                content: '';
+                display: table;
+                clear: both;
+            }
+               
+            }
+        }
+    }
+    
+    .slider{
+        width: 1024px;
+        overflow: hidden;
+        .sliderWrapper{
+            width:9999px;
+            height: 683px;
+            position: relative;
+            transition: left 500ms linear;
+            float: left;
+            position: relative;
+            width: 1024px;
+            height: 683px;
+        }    
+    }
+    
+}
